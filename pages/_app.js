@@ -3,7 +3,7 @@ import Head from 'next/head';
 import 'antd/dist/antd.css';
 import '../styles/_app.scss';
 
-const PlanetWhim = ({ Component, pageProps }) => {
+const CrudNextJs = ({ Component, pageProps }) => {
   useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
@@ -21,4 +21,4 @@ const PlanetWhim = ({ Component, pageProps }) => {
   );
 };
 
-export default PlanetWhim;
+export default CrudNextJs;

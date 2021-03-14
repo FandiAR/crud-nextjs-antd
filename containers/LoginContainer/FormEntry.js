@@ -34,8 +34,8 @@ const FormEntry = ({ formType }) => {
         setTimeout(() => {
           setIsLoading(false);
           setShowModal(false);
-        }, 1000);
-        if (formType !== 'login') message.success('Pendaftaran berhasil...:-)');
+        }, 5000);
+        if (formType !== 'login') message.success('Registration successfull...:-)');
         Router.push(path);
       })
       .catch((error) => {
@@ -56,8 +56,8 @@ const FormEntry = ({ formType }) => {
       <Title level={4}>
         {
           formType === 'login'
-            ? 'Masuk ke CrudReactJs'
-            : 'Daftarkan akun CrudNextJs kamu'
+            ? 'Login to CrudReactJs'
+            : 'Regist your CrudNextJs account'
         }
       </Title>
       <Form className="margin-top-4">
@@ -66,7 +66,7 @@ const FormEntry = ({ formType }) => {
           name="email"
           rules={[
             { type: 'email' },
-            { required: true, message: 'Email harus di isi...' },
+            { required: true, message: 'Email must be filled...' },
           ]}
         >
           <Input
@@ -78,10 +78,10 @@ const FormEntry = ({ formType }) => {
           />
         </Form.Item>
 
-        <Text>Kata Sandi</Text>
+        <Text>Password</Text>
         <Form.Item
           name="password"
-          rules={[{ required: true, message: 'Kata sandi harus di isi...' }]}
+          rules={[{ required: true, message: 'Password must be filled...' }]}
         >
           <Input.Password
             size="large"
@@ -93,15 +93,15 @@ const FormEntry = ({ formType }) => {
         <Form.Item>
           <Button
             isLoading={isLoading}
-            text={formType === 'login' ? 'Masuk' : 'Daftar'}
+            text={formType === 'login' ? 'Login' : 'Register'}
             handleClick={handleSubmit}
           />
         </Form.Item>
         <Text className="padding-top-2">
-          {formType === 'login' ? 'Belum punya akun? ' : 'Sudah punya akun? '}
+          {formType === 'login' ? 'Dont have account? ' : 'Have account? '}
           <span>
             <Link role="presentation" onClick={handleClickLink}>
-              {formType === 'login' ? 'Daftar' : 'Masuk'}
+              {formType === 'login' ? 'Register' : 'Login'}
             </Link>
           </span>
         </Text>
@@ -118,7 +118,7 @@ const FormEntry = ({ formType }) => {
                   justifyContent: 'center',
                 }}
               >
-                <Spin tip="Menunggu..." size="large" />
+                <Spin tip="Brewing the coffee..." size="large" />
               </Modal>
             )
             : null

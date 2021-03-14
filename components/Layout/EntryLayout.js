@@ -9,8 +9,8 @@ const EntryLayout = ({ children }) => (
           CrudReactJs
         </Title>
         <div className="text-center text-welcome">
-          <Title level={1} className="text-white">Selamat Datang...!</Title>
-          <Title level={3} className="text-white">Di simple web apps CrudReactJs</Title>
+          <Title level={1} className="text-white">Welcome...!</Title>
+          <Title level={3} className="text-white">At simple web apps CrudReactJs</Title>
         </div>
       </Col>
       <Col span={12} className="right">

@@ -51,7 +51,7 @@ const UsersContainer = () => {
 
   const handleDelete = (id) => {
     setUsers(users.filter((i) => i.id !== id));
-    message.success('User berhasil di hapus... :-)');
+    message.success('User deleted... :-)');
   };
 
   const getColumnSearchProps = (dataIndex) => ({
@@ -64,7 +64,7 @@ const UsersContainer = () => {
       <div style={{ padding: 8 }}>
         <Input
           ref={searchInput}
-          placeholder="Cari..."
+          placeholder="Search..."
           value={selectedKeys[0]}
           onChange={(e) =>
             setSelectedKeys(e.target.value ? [e.target.value] : [])
@@ -77,7 +77,7 @@ const UsersContainer = () => {
           handleClick={() => handleSearch(selectedKeys, confirm, dataIndex)}
           icon={<SearchOutlined />}
           isClass="search"
-          text="Cari"
+          text="Search"
         />
         <Button
           handleClick={() => handleReset(clearFilters)}
@@ -149,7 +149,7 @@ const UsersContainer = () => {
             rules={[
               {
                 required: true,
-                message: `${title} harus di isi!`,
+                message: `${title} must be filled!`,
               },
             ]}
           >
@@ -189,7 +189,7 @@ const UsersContainer = () => {
         newUsers.splice(index, 1, { ...newUsers[index], ...row });
         setUsers(newUsers);
         setEditingKey('');
-        message.success('Perubahan data berhasil di simpan... :-)')
+        message.success('Data updated... :-)')
       } else {
         newUsers.push(row);
         setUsers(newUsers);
@@ -221,7 +221,7 @@ const UsersContainer = () => {
       editable: true,
     },
     {
-      title: 'Nama Depan',
+      title: 'First Name',
       dataIndex: 'first_name',
       align: 'center',
       sorter: (a, b) => a.first_name.localeCompare(b.first_name),
@@ -229,7 +229,7 @@ const UsersContainer = () => {
       editable: true,
     },
     {
-      title: 'Nama Belakang',
+      title: 'Last Name',
       dataIndex: 'last_name',
       align: 'center',
       sorter: (a, b) => a.last_name.localeCompare(b.last_name),
@@ -252,27 +252,27 @@ const UsersContainer = () => {
                   marginRight: 8,
                 }}
               >
-                Simpan
+                Save
               </Link>
               <span className="padding-side-2">|</span>
               <span>
                 <Popconfirm
-                  title="Yakin akan membatalkan?"
+                  title="Are you sure to cancel?"
                   onConfirm={cancel}
-                  okText="Ya"
-                  cancelText="Tidak"
+                  okText="Yes"
+                  cancelText="No"
                 >
-                  <Link>Batal</Link>
+                  <Link>Cancel</Link>
                 </Popconfirm>
               </span>
             </>
           ) : (
             <>
               <Popconfirm
-                title="Anda yakin akan menghapus user ini?"
+                title="Are you sure to delete this user?"
                 onConfirm={() => handleDelete(row.id)}
-                okText="Ya"
-                cancelText="Tidak"
+                okText="Yes"
+                cancelText="No"
               >
                 <Tooltip placement="bottom" title="Hapus" className="pointer text-red">
                   <DeleteOutlined />
@@ -280,7 +280,7 @@ const UsersContainer = () => {
               </Popconfirm>
               <span className="padding-side-2">|</span>
               <span disabled={editingKey !== ''} onClick={() => edit(row)}>
-                <Tooltip placement="bottom" title="Ubah" className="pointer text-blue">
+                <Tooltip placement="bottom" title="Edit" className="pointer text-blue">
                   <EditOutlined />
                 </Tooltip>
               </span>
