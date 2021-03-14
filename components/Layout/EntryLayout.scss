@@ -1,0 +1,43 @@
+.guest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: $main_bg;
+
+    &__container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 70vw !important;
+        height: 90vh !important;
+
+        .left {
+            background: url("../../public/assets/images/bg-ej.svg");
+            height: 100%;
+            border-right: solid 1px $disabled;
+            padding: 20px;
+            color: $white;
+            overflow: hidden;
+
+            .text-welcome {
+                position: relative;
+                top: 35%;
+                text-align: center;
+            }
+
+            img {
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        .right {
+            background-color: $white;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+}

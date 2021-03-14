@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="551" height="1024" viewBox="0 0 551 1024">
+    <defs>
+        <linearGradient id="81ckcyebxb" x1="50%" x2="50%" y1="-12.306%" y2="96.704%">
+            <stop offset="0%" stop-color="#5B51F3"/>
+            <stop offset="100%" stop-color="#3175F2"/>
+        </linearGradient>
+        <linearGradient id="8plo368tdf" x1="38.294%" x2="92.023%" y1="50.326%" y2="50.338%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity="0"/>
+            <stop offset="63.314%" stop-color="#FFF1E2" stop-opacity=".263"/>
+            <stop offset="100%" stop-color="#FFE6C0" stop-opacity=".49"/>
+        </linearGradient>
+        <linearGradient id="lgent0hitg" x1="50%" x2="50%" y1="17.419%" y2="90.468%">
+            <stop offset="0%" stop-color="#5659F3"/>
+            <stop offset="100%" stop-color="#667AFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="5fd22j4l3h" x1="50%" x2="50%" y1="20.155%" y2="97.836%">
+            <stop offset="0%" stop-color="#5659F3"/>
+            <stop offset="100%" stop-color="#667AFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="1szeq7k9wi" x1="50%" x2="50%" y1="38.683%" y2="90.008%">
+            <stop offset="0%" stop-color="#5659F3"/>
+            <stop offset="100%" stop-color="#667AFF" stop-opacity="0"/>
+        </linearGradient>
+        <circle id="8wbhudjk2d" cx="185.5" cy="185.5" r="185.5"/>
+        <path id="9wrj791b4a" d="M0 0H551V1024H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-121) translate(121)">
+                <mask id="3has18x19c" fill="#fff">
+                    <use xlink:href="#9wrj791b4a"/>
+                </mask>
+                <use fill="#FAFAFA" xlink:href="#9wrj791b4a"/>
+                <path fill="url(#81ckcyebxb)" d="M0 0H551V1024H0z" mask="url(#3has18x19c)"/>
+                <g mask="url(#3has18x19c)">
+                    <g transform="rotate(-45 1107.221 708.71)">
+                        <mask id="fe2wz2y46e" fill="#fff">
+                            <use xlink:href="#8wbhudjk2d"/>
+                        </mask>
+                        <g mask="url(#fe2wz2y46e)">
+                            <g fill="url(#8plo368tdf)" transform="translate(-15 13)">
+                                <path d="M0 20H400V24H0zM0 40H400V44H0zM0 60H400V64H0zM0 80H400V84H0zM0 100H400V104H0zM0 120H400V124H0zM0 140H400V144H0zM0 160H400V164H0zM0 180H400V184H0zM0 200H400V204H0zM0 220H400V224H0zM0 240H400V244H0zM0 260H400V264H0zM0 280H400V284H0zM0 300H400V304H0zM0 320H400V324H0zM0 340H400V344H0zM0 0H400V4H0z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path fill="url(#lgent0hitg)" d="M427.538 -213.514H514.538V359.486H427.538z" mask="url(#3has18x19c)" transform="rotate(43 471.038 72.986)"/>
+                <path fill="url(#5fd22j4l3h)" d="M518 48H560V348H518z" mask="url(#3has18x19c)" transform="rotate(43 539 198)"/>
+                <path fill="url(#1szeq7k9wi)" d="M-17.5 -392.647L108.003 -477.5 871.5 255.647 745.997 340.5z" mask="url(#3has18x19c)" opacity=".837" transform="rotate(90 427 -68.5)"/>
+                <path fill="#6B9EFF" fill-opacity=".268" d="M509 974L568 833 568 958.445z" mask="url(#3has18x19c)"/>
+                <path fill="#6B9EFF" fill-opacity=".255" d="M40 392.035L57.823 374 76 390.023 58 409z" mask="url(#3has18x19c)"/>
+            </g>
+        </g>
+    </g>
+</svg>

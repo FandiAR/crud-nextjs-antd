@@ -1,0 +1,16 @@
+.default {
+    border-radius: 10px !important;
+    width: 100%;
+    background-color: $orange !important;
+    color: $white !important;
+    height: 60px !important;
+    &:hover {
+        background-color: $orange !important;
+        color: $white !important;
+    }
+}
+.search {
+    width: 50% !important;
+    text-align: center;
+}
+

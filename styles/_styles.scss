@@ -1,0 +1,47 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .ant-layout-header {
+        background-color: $white !important;
+        box-shadow: 0 0 20px 0 rgba(64, 68, 63, 0.1);
+    }
+    .ant-layout {
+        background-color: $white;
+    }
+
+    // font styles
+    .text-white {
+        color: $white;
+    }
+    .text-blue {
+        color: $blue;
+    }
+    .text-red {
+        color: $red;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-left {
+        text-align: left;
+    }
+
+    // cursor styles
+    .pointer {
+        cursor: pointer;
+    }
+
+    // padding
+    .padding-side-2 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .padding-top-4 {
+        padding-top: 20px !important;
+    }
+}
