@@ -6,11 +6,11 @@ const EntryLayout = ({ children }) => (
     <Row className="guest__container">
       <Col span={12} className="left">
         <Title className="text-left text-white" level={2}>
-          CrudReactJs
+          CrudNextJs
         </Title>
         <div className="text-center text-welcome">
           <Title level={1} className="text-white">Welcome...!</Title>
-          <Title level={3} className="text-white">At simple web apps CrudReactJs</Title>
+          <Title level={3} className="text-white">A simple web apps CrudNextJs</Title>
         </div>
       </Col>
       <Col span={12} className="right">
